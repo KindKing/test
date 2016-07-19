@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+    <formbeans>
+        <bean name="panduan" class="business.PanduanForm"/>
+    </formbeans>
+    
+    <action-mapping>
+        <action name="panduan" type="business.PandAction" path="/panduan">
+            <forward name="success" value="/view/myjsp.jsp">
+            </forward>
+            <forward name="fail" value="/view/fail.jsp">
+            </forward>
+        </action>
+        
+    </action-mapping>
+    
+</struts>
